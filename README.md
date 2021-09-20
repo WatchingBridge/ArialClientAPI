@@ -1,3 +1,3 @@
 # ArialClientAPI
 
-# Simple api for displaying users playing on arial client.
+Simple api for displaying users playing on arial client.
