@@ -1,8 +1,9 @@
 name: ArialClientAPI
 author: Lukas
 main: lukas.arialclient.api.ArialAPI
-version: 1.0
+version: 1.1
 description: Simple API for Arial Client.
 
 commands:
   arial:
+  arialapi:

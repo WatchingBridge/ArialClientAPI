@@ -1,13 +1,13 @@
 package lukas.arialclient.api;
 
-import org.bukkit.plugin.java.*;
-import lukas.arialclient.api.handler.*;
+import lukas.arialclient.api.command.ClientCommand;
+import lukas.arialclient.api.handler.PlayerHandler;
+import lukas.arialclient.api.listener.ConnectionListener;
 import org.bukkit.*;
-import lukas.arialclient.api.listener.*;
+import org.bukkit.command.*;
 import org.bukkit.event.*;
 import org.bukkit.plugin.*;
-import lukas.arialclient.api.command.*;
-import org.bukkit.command.*;
+import org.bukkit.plugin.java.*;
 
 public class ArialAPI extends JavaPlugin
 {
@@ -20,6 +20,7 @@ public class ArialAPI extends JavaPlugin
         this.saveConfig();
         Bukkit.getPluginManager().registerEvents((Listener)new ConnectionListener(), (Plugin)this);
         this.getCommand("arial").setExecutor((CommandExecutor)new ClientCommand());
+        this.getCommand("arialapi").setExecutor((CommandExecutor)new ClientCommand());
     }
     
     public void onDisable() {

@@ -1,9 +1,10 @@
 package lukas.arialclient.api;
 
-import java.util.*;
+import lukas.arialclient.api.handler.PlayerHandler;
+import lukas.arialclient.api.player.ArialPlayer;
 import org.bukkit.entity.*;
-import lukas.arialclient.api.player.*;
-import lukas.arialclient.api.handler.*;
+
+import java.util.ArrayList;
 
 public class API
 {

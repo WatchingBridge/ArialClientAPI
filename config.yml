@@ -1,13 +1,13 @@
 arial-api:
-  player-not-online: "&cThat player is not online."
-  format-on: "&aOn"
-  format-off: "&cNot On"
-  message: "&d%target%&f is currently %format% &fArial Client."
+  player-not-online: "&cPlayer not found."
+  format-on: "&econnected to"
+  format-off: "&cnot connected &eto"
+  message: "&e%target% &eare currently %format% &dArial Client."
   chat:
     enabled: true
-    prefix: "&7[&5Arial&7]"
+    prefix: "&e[&dArial&e]"
     hook: "%arial%"
   list:
     no-players: "&cThere are currently no players online using Arial Client."
-    message: "&dArial Client users:"
-    list-format: " &7* &d%player%"
+    message: "&dArial Client &eusers:"
+    list-format: " &e* &f%player%"
